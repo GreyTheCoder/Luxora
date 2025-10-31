@@ -1,0 +1,16 @@
+<% layout("layout/boilerplate") %>
+<style>
+    @media (max-width: 575px) {
+  .alert {
+    font-size: 0.9rem !important;
+    padding: 0.75rem 1rem !important;
+  }
+}
+</style>
+<div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="alert alert-danger col-12 col-md-6" role="alert">
+      <p class="alert-heading text-center"><%= message %></p>
+    </div>
+  </div>
+</div>

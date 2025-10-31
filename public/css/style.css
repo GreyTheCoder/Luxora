@@ -1,0 +1,141 @@
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  display: flex  !important;
+  flex-direction: column  !important;
+  min-height: 100vh  !important;
+}
+.container {
+  flex: 1  !important;
+}
+ 
+
+
+/* footer */
+.f-info-links a{
+  text-decoration: none;
+  color: #222222;
+}
+
+
+.f-info-links,.f-info-social,.f-info-brand{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-info-social i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info {
+  text-align: center;
+  display: flex;
+  height: 6rem;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  align-items: space-evenly !important;
+}
+/* footer */
+
+
+
+
+
+
+/* new.ejs */
+.add-btn  {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* edit.ejs */
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+
+
+
+/* navbar */
+.navbar {
+  min-height: 5rem;                  
+  background-color: white !important; 
+  transition: all 0.3s ease;
+}
+
+/* Navbar icons */
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+/* Navbar links */
+.nav-link {
+  color: #222222 !important;
+}
+
+/* Right section link spacing */
+.right-links .nav-link {
+  margin-left: 15px;
+}
+
+/* Search button styles */
+.search-btn {
+  background-color: #ff385c;
+  color: white;
+  border-radius: 25px;
+  padding: 0 1rem;
+}
+
+.search-btn:hover {
+  background-color: #e03150;
+  color: white;
+}
+
+.search-btn i {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.search-input {
+  border-radius: 25px;
+}
+
+
+@media (max-width: 992px) {
+  nav.navbar {
+    height: auto !important;             
+    background-color: white !important;   
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar .container-fluid {
+    flex-wrap: wrap;                      
+    justify-content: center;
+  }
+
+  .right-links {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  form[role="search"] {
+    width: 90% !important;
+    margin-top: 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
