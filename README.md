@@ -68,4 +68,3 @@ Planned improvements include:
 Gaurav Singh  
 Full Stack Developer — Node.js | Express | MongoDB
 
-If you’d like, I can also draft a shorter project summary for your portfolio or prepare deployment instructions for Render or Heroku. Which would you prefer?
