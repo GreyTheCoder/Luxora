@@ -25,7 +25,7 @@ Live demo: https://luxora-jzgd.onrender.com
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/Luxora.git
+git clone https://github.com/GreyTheCoder/Luxora.git
 cd Luxora
 ```
 
