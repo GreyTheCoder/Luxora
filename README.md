@@ -1,81 +1,71 @@
- 🏡Luxora
+# Luxora
 
-Luxora is a simple Airbnb-style web app where users can explore, add, and book properties. It’s built using Node.js, Express, MongoDB, and EJS. I made this project to learn full-stack development and understand how a real booking platform works from both frontend and backend sides.
+Luxora is an Airbnb-style web application that lets users discover, list, and book properties. Built as a learning project to deepen my full‑stack skills, Luxora demonstrates core concepts of a booking platform — from secure authentication and image uploads to persistent listings and user reviews.
 
-🌐 Live Demo: https://luxora-jzgd.onrender.com
+Live demo: https://luxora-jzgd.onrender.com
 
-⚙️ Tech Stack
+## Tech stack
+- Frontend: EJS, HTML, CSS, JavaScript  
+- Backend: Node.js, Express.js  
+- Database: MongoDB (Mongoose)  
+- Image storage: Cloudinary  
+- Authentication: Passport.js  
+- Deployment: Render
 
-Frontend: EJS, HTML, CSS, JavaScript
+## Key features
+- User registration and login via Passport.js (local strategy)  
+- Create, edit, and delete property listings  
+- Upload and manage property images with Cloudinary  
+- Leave reviews on property pages  
+- Flash messages for success and error feedback  
+- Session handling and access control for private routes  
+- Responsive UI with a consistent navbar and footer
 
-Backend: Node.js, Express.js
+## Getting started
 
-Database: MongoDB (Mongoose)
-
-Image Storage: Cloudinary
-
-Authentication: Passport.js
-
-Deployment: Render
-
-🚀 Features
-
-User signup/login using Passport.js
-
-Add, edit, and delete property listings
-
-Upload property images using Cloudinary
-
-Leave reviews on listings
-
-Flash messages for success/error
-
-Session handling and authentication
-
-Fully responsive design with navbar and footer
-
-🛠️ Setup
-
-Clone the repo
-
+1. Clone the repository
+```bash
 git clone https://github.com/yourusername/Luxora.git
 cd Luxora
+```
 
-
-Install dependencies
-
+2. Install dependencies
+```bash
 npm install
+```
 
-
-Add a .env file
-
+3. Create a `.env` file in the project root and add the following variables:
+```env
 ATLASDB_URL=your_mongodb_url
-SECRET=your_secret_key
+SECRET=your_session_secret
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_KEY=your_api_key
 CLOUDINARY_SECRET=your_api_secret
+```
 
-
-Run the app
-
+4. Start the application
+```bash
 node app.js
+```
 
+The app will run locally at: http://localhost:8080
 
-App runs on http://localhost:8080
+## Notes on implementation
+- Sessions and authentication are handled with Express sessions and Passport.js to secure user flows for creating and managing listings.
+- Images are uploaded directly to Cloudinary, keeping the server stateless with respect to file storage.
+- Mongoose schemas model properties, users, and reviews, with relationships and basic validation.
+- Flash messages are used to surface immediate feedback for user actions (e.g., successful listing creation or validation errors).
 
-💭 Future Plans
+## Roadmap / Future plans
+Planned improvements include:
+- Integrating an online payment provider for bookings
+- Adding interactive maps to show property locations
+- Advanced search and filtering (price, availability, location)
+- Admin dashboard for site moderation and analytics
+- Optional dark mode and improved accessibility
 
-Add an online payment option
+## Author
+Gaurav Singh  
+Full Stack Developer — Node.js | Express | MongoDB
 
-Map integration for property location
-
-Advanced search filters
-
-Admin dashboard
-
-Dark mode
-
-👨‍💻 Author
-
-Gaurav Singh
-Full Stack Developer | Node.js | Express | MongoDB
+If you’d like, I can also draft a shorter project summary for your portfolio or prepare deployment instructions for Render or Heroku. Which would you prefer?
